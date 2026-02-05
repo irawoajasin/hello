@@ -1,42 +1,8 @@
 body {
   font-family: 'Times New Roman', Times, serif;
   color:#000080;
-	background: linear-gradient(-45deg, #FFE9C4, #FFDFAB, #CEDBE0, #ABD7FF);
-  animation: gradient 15s ease infinite;
+	background: #fff;
   height: 100vh;
-  background-size: 400% 400%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-.stage {
-  position: relative;
-  width: 100%;
-  height: 50%;
-  float: left;
-  border-style: solid;
-  border-radius: 10%;
-  border-color: #000080;
-  text-align: center;
-  top: 0%;
-  padding: 5%;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  font-size: 0px;
-  float: left;
-}
-
-.row {
-  font-size: 0px;
-  display: flex;
-  width: 100%;
-  overflow: auto;
 }
 
 img {
@@ -44,6 +10,21 @@ img {
   height: auto;
   display: block;
   margin-right: auto;
+}
+
+p, a{
+  font-size: 24px;
+}
+
+h2, h3 {
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: solid;
+  text-underline-offset: 0.15em;
 }
 
 .overlay {
@@ -70,8 +51,6 @@ img {
   color: #000080;
   position: absolute;
   line-height: 12pt;
-  font-size: 12px;
-  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -80,134 +59,50 @@ img {
 }
 
 .box-absolute-left-10 {
-  color: rgb(124, 28, 28);
-  background-color: rgba(240, 248, 255, 0);
   box-sizing: border-box;
-  width: 70px;
+  width: 25%;
   height: auto;
 
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 20%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-left: 2%;
 }
 
 #visit {
-  color: #7194C9;
-  text-underline-offset: 0.15em;
+  color: #0000ff;
 }
 
 .box-absolute-left-10 a {
   text-underline-offset: 0.15em;
-  text-decoration: underline 0.10em rgba(113, 148, 201, 0);
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
   position: fixed;
   display: inline-block;
   align-items: center;
 }
 
 .box-absolute-left-10 a:hover {
-  color: #7194C9;
+  color: #0000ff;
+  text-decoration: solid;
+  text-underline-offset: 0.15em;
 }
 
 .box-absolute-left-40 {
   color: #000080;
   background-color: rgba(240, 248, 255, 0);
   box-sizing: border-box;
-  width: 500px;
+  width: 70%;
   height: auto;
-  text-decoration: none;
 
   line-height: 175%;
 
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: auto;
-  margin-top: auto;
-  margin-left: 40%;
+  padding-bottom: 2%;
+  padding-top: 0%;
+  margin-left: 20%;
   display: flex;
 }
 
 .box-absolute-left-40 h1 {
   line-height: 100%;
-}
-
-#flex-vertical-centered {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left;
-}
-
-.button-62 {
-  border: 0;
-  border-radius: 12px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 2.5;
-  outline: transparent;
-  padding: 0 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-}
-
-.button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-.button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-.rounded{
-    width: 30px;
-  height: 30px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
-
-.pointed{
-  width: 7px;
-  height: 7px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.emphasized { 
-  color: #000080;
-  text-decoration: none;
-}
-
-.emphasized:hover { 
-  color: #000080;
-  text-decoration: underline;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
