@@ -6,9 +6,7 @@ body {
 }
 
 img {
-  max-width: 95%;
-  height: auto;
-  display: block;
+  width: 300px;
   margin-right: auto;
 }
 
@@ -23,8 +21,7 @@ h2, h3 {
 }
 
 a:hover {
-  text-decoration: solid;
-  text-underline-offset: 0.15em;
+  text-decoration: underline;
 }
 
 .overlay {
@@ -74,17 +71,16 @@ a:hover {
 }
 
 .box-absolute-left-10 a {
-  text-underline-offset: 0.15em;
   text-decoration: none;
   position: fixed;
   display: inline-block;
   align-items: center;
+  color: #000080
 }
 
 .box-absolute-left-10 a:hover {
   color: #0000ff;
-  text-decoration: solid;
-  text-underline-offset: 0.15em;
+  text-decoration: underline;
 }
 
 .box-absolute-left-40 {
