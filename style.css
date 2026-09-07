@@ -1,104 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+}
+
 body {
-  font-family: 'Times New Roman', Times, serif;
-  color:#000080;
-	background: #fff;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  text-transform: lowercase;
+  color:#1155cc;
   height: 100vh;
+  margin: 0rem 10rem;
 }
 
-img {
-  width: 300px;
-  margin-right: auto;
+a.hover {
+  cursor: cell;
+  color:rgb(0, 255, 89)
 }
 
-p, a{
-  font-size: 24px;
+.bio {
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
-h2, h3 {
-  font-size: 24px;
-  font-weight: 100;
-  font-style: italic;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 95%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(210, 231, 243, 0.9);
-  font-size: 0px;
-  border-style: solid;
-  border-radius: 3%;
-}
-
-.container:hover .overlay {
-  opacity: 1;
+h1 {
+  font-size: 2rem;
 }
 
 .content {
-  color: #000080;
-  position: absolute;
-  line-height: 12pt;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  padding-top: 5rem;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  outline: invert;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  cursor: cell;
+  opacity: 0.5;
+}
+
+.marker {
+  display: inline-block;
+  width: 1rem;
   text-align: center;
 }
 
-.box-absolute-left-10 {
-  box-sizing: border-box;
-  width: 25%;
-  height: auto;
-
-  position: absolute;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  margin-left: 2%;
+.nav-item:hover {
+  opacity: 1;
 }
 
-#visit {
-  color: #0000ff;
+.nav-item.selected {
+  opacity: 1;
 }
 
-.box-absolute-left-10 a {
-  text-decoration: none;
-  position: fixed;
+.star {
   display: inline-block;
-  align-items: center;
-  color: #000080
+  width: 1rem;
+  flex-shrink: 0;
 }
 
-.box-absolute-left-10 a:hover {
-  color: #0000ff;
+.label {
+  flex: 1;
+}
+
+.more-link {
+  cursor: cell;
   text-decoration: underline;
+  color: inherit;
 }
 
-.box-absolute-left-40 {
-  color: #000080;
-  background-color: rgba(240, 248, 255, 0);
-  box-sizing: border-box;
-  width: 70%;
+.more-link:hover {
+  opacity: 1;
+}
+
+/* grid system */
+
+.page-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding-bottom: 10rem;
+}
+
+/* span utility classes, this can apply to any element*/
+.span-1 { grid-column: span 1; }
+.span-2 { grid-column: span 2; }
+.span-3 { grid-column: span 3; }
+
+/* classes for where items start */
+.start-1 { grid-column-start: 1; }
+.start-2 { grid-column-start: 2; }
+.start-3 { grid-column-start: 3; }
+
+.page-body img {
+  width: 100%;
   height: auto;
-
-  line-height: 175%;
-
-  position: absolute;
-  padding-bottom: 2%;
-  padding-top: 0%;
-  margin-left: 20%;
-  display: flex;
-}
-
-.box-absolute-left-40 h1 {
-  line-height: 100%;
+  display: block;
 }

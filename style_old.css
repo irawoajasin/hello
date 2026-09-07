@@ -1,0 +1,104 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color:#000080;
+	background: #fff;
+  height: 100vh;
+}
+
+img {
+  width: 300px;
+  margin-right: auto;
+}
+
+p, a{
+  font-size: 24px;
+}
+
+h2, h3 {
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 95%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(210, 231, 243, 0.9);
+  font-size: 0px;
+  border-style: solid;
+  border-radius: 3%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.content {
+  color: #000080;
+  position: absolute;
+  line-height: 12pt;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box-absolute-left-10 {
+  box-sizing: border-box;
+  width: 25%;
+  height: auto;
+
+  position: absolute;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-left: 2%;
+}
+
+#visit {
+  color: #0000ff;
+}
+
+.box-absolute-left-10 a {
+  text-decoration: none;
+  position: fixed;
+  display: inline-block;
+  align-items: center;
+  color: #000080
+}
+
+.box-absolute-left-10 a:hover {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+.box-absolute-left-40 {
+  color: #000080;
+  background-color: rgba(240, 248, 255, 0);
+  box-sizing: border-box;
+  width: 70%;
+  height: auto;
+
+  line-height: 175%;
+
+  position: absolute;
+  padding-bottom: 2%;
+  padding-top: 0%;
+  margin-left: 20%;
+  display: flex;
+}
+
+.box-absolute-left-40 h1 {
+  line-height: 100%;
+}
