@@ -10,11 +10,21 @@ body {
   color:#1155cc;
   height: 100vh;
   margin: 0rem 10rem;
+  overscroll-behavior: contain;
 }
 
-a.hover {
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
   cursor: cell;
-  color:rgb(0, 255, 89)
+}
+
+a:hover {
+  cursor: cell;
+  color:rgb(191, 255, 0);
 }
 
 .bio {
@@ -22,17 +32,15 @@ a.hover {
   margin-bottom: 2rem;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
 .content {
   padding-top: 5rem;
+  width: 75%;
+  margin: auto;
 }
 
 h1 {
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -70,6 +78,8 @@ p {
 }
 
 .star {
+  font-size: 10rem; 
+  margin: -1rem 0 -1rem 0;
   display: inline-block;
   width: 1rem;
   flex-shrink: 0;
@@ -113,4 +123,73 @@ p {
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 5rem;
+  border: #1155cc;
+  border: solid;
 }
+
+
+@media only screen and (max-width: 680px) {
+  
+  .star {
+    font-size: 5rem; 
+    margin: 0 0 -1rem 0;
+  }
+  
+  .content {
+    width: 100%
+  }
+  
+  .nav-list {
+    letter-spacing: -0.75px;
+    font-size: 1rem;
+  }
+  
+  /* span utility classes, this can apply to any element*/
+  .span-1 { grid-column: span 3; }
+  .span-2 { grid-column: span 3; }
+  .span-3 { grid-column: span 3; }
+  
+  /* classes for where items start */
+  .start-1 { grid-column-start: 1; }
+  .start-2 { grid-column-start: 1; }
+  .start-3 { grid-column-start: 1; }
+    
+  
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  a {
+    letter-spacing: -0.75px;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  .page-body img {
+    border-width: 1px; 
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  body {
+    margin: 0 2rem;
+    letter-spacing: -0.75px;
+  }
+  
+  .bio {
+    font-size: 1.25rem;
+    letter-spacing: -0.75px;
+  }
+  
+  .page-body {
+    padding-bottom: 5rem;
+  }
+} 

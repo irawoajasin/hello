@@ -1,15 +1,10 @@
 // PAGES
 const items = [
-    { name: "(2026) reaching for the clouds", page: "pages/clouds.html", category: "installation" },
-     { name: "(2026) black ecologies", page: "pages/blackecologies.html", category: "website, zine, installation" },
      { name: "(2026) fugitive digital archives", page: "pages/fugitivedigitalarchives.html", category: "installation, zine"},
-    { name: "(2026) Imagining Speculative Technologies", page: "pages/speculativetech.html", category: "workshop" },
-    { name: "(2026) Writing Protopian Futures", page: "pages/protopian.html", category: "workshop" },
     { name: "(2026) Cyanotypes as Tools for Critical and Creative Data Capture", page: "pages/cyanotype.html", category: "workshop" },
     { name: "(2026) extraordinary", page: "pages/extraordinary.html", category: "website" },
     { name: "(2026) Black Zine Fair", page: "pages/bzf-site.html", category: "website" },
-    { name: "(2025) i want the screen to remember me", page: "pages/rememberme.html", category: "installation, zine"},
-    { name: "(2024) for the illegible", page: "pages/fortheillegible.html", category: "zine" }
+    { name: "(2025) i want the screen to remember me", page: "pages/rememberme.html", category: "installation, zine"}
 ];
 
 let selectedItem = null;
